@@ -2,6 +2,49 @@
 
 Cursor AI 실습 프로젝트입니다.
 
+저장소: [kainlee99-lgtm/cursor-demo](https://github.com/kainlee99-lgtm/cursor-demo)
+
+## 릴리스 노트
+
+> GitHub MCP로 [kainlee99-lgtm/cursor-demo](https://github.com/kainlee99-lgtm/cursor-demo) 저장소의 커밋·이슈를 조회해 작성했습니다.
+
+### v1.0.0 (2026-06-30)
+
+**이메일 유효성 검증 모듈과 문자열 유틸리티를 추가하고, MCP 연동 가이드와 프로젝트 문서를 정비했습니다.**
+
+#### ✨ 기능
+
+- **이메일 유틸리티** (`src/email.js`)
+  - `extractEmails` — 멤버 목록에서 이메일 주소 추출
+  - `isValidEmail` — RFC 5322 기반 이메일 형식 검증
+  - `getValidEmails` — 유효한 이메일만 필터링
+- **문자열 유틸리티** (`src/stringUtils.mjs`)
+  - `capitalize` — 앞뒤 공백 제거 후 첫 글자 대문자 변환
+  - `truncate` — 최대 길이 초과 시 말줄임표(`...`)로 자르기
+- **테스트** — `npm test`로 `src/email.test.js` 실행 (Node.js 내장 test runner)
+- **README 문서화**
+  - 사용한 MCP 서버 목록 및 종류 설명
+  - Sequential Thinking, GitHub, Context7 MCP 설치·동작 확인·문제 해결 가이드
+
+#### 🐛 버그 수정
+
+- (해당 없음)
+
+#### 🧹 기타
+
+- `.cursor/rules/coding-style.mdc` — ES Modules, JSDoc, 한국어 주석 규칙 추가
+- [#1](https://github.com/kainlee99-lgtm/cursor-demo/issues/1) — Cursor.AI 핵심 기술(Rules, Skills, MCP, Hooks) 정리 이슈 등록
+
+#### 포함 커밋
+
+| 커밋 | 설명 |
+|------|------|
+| [`d89e620`](https://github.com/kainlee99-lgtm/cursor-demo/commit/d89e6206b7045aabfa29651b06d6194585bdaab2) | Cursor 실습 프로젝트 초기 업로드 |
+| [`0dba5d5`](https://github.com/kainlee99-lgtm/cursor-demo/commit/0dba5d596d1740244b40a0a167a7a1c2d8313b75) | README.md에 사용한 MCP 서버 정보 추가 |
+| [`d20d396`](https://github.com/kainlee99-lgtm/cursor-demo/commit/d20d39699f8ddba7eca08220112976354ec7ec47) | README.md에 MCP 설치 방법 상세 가이드 추가 |
+
+---
+
 ## 사용한 MCP 서버
 
 이 프로젝트에서 Cursor Agent와 함께 사용한 MCP(Model Context Protocol) 서버 목록입니다.
