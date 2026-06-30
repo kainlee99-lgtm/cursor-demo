@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node --test src/email.test.js"
+    "start": "node src/server/index.mjs",
+    "test": "node --test src/email.test.js src/server/login.test.mjs"
   },
   "keywords": [],
   "author": "",
